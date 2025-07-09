@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Score Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Simple Quiz</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. What is the capital of France?</p>
+        <label><input type="radio" name="q1" value="a" /> Berlin</label><br>
+        <label><input type="radio" name="q1" value="b" /> Madrid</label><br>
+        <label><input type="radio" name="q1" value="c" /> Paris</label><br>
+        <label><input type="radio" name="q1" value="d" /> Rome</label>
+      </div>
+
+      <div class="question">
+        <p>2. What is 2 + 2?</p>
+        <label><input type="radio" name="q2" value="a" /> 3</label><br>
+        <label><input type="radio" name="q2" value="b" /> 4</label><br>
+        <label><input type="radio" name="q2" value="c" /> 5</label><br>
+        <label><input type="radio" name="q2" value="d" /> 6</label>
+      </div>
+
+      <div class="question">
+        <p>3. What language is used to style web pages?</p>
+        <label><input type="radio" name="q3" value="a" /> HTML</label><br>
+        <label><input type="radio" name="q3" value="b" /> CSS</label><br>
+        <label><input type="radio" name="q3" value="c" /> Python</label><br>
+        <label><input type="radio" name="q3" value="d" /> Java</label>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
